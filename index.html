@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Student Management System</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header><h1>🎓 Student Management System</h1></header>
+  <main>
+    <section class="card">
+      <h2 id="form-title">Add Student</h2>
+      <form id="student-form" novalidate>
+        <input type="hidden" id="student-id">
+        <label>Name<input id="name" required></label>
+        <label>Roll No<input id="roll_no" required></label>
+        <label>Class<input id="class_name" required></label>
+        <label>Marks (0-100)<input id="marks" type="number" min="0" max="100" step="0.01" required></label>
+        <label>Contact (10 digits)<input id="contact" maxlength="10" required></label>
+        <div class="actions">
+          <button type="submit" id="submit-btn">Add Student</button>
+          <button type="button" id="cancel-btn" class="secondary" hidden>Cancel</button>
+        </div>
+      </form>
+      <div id="message" role="alert"></div>
+    </section>
+
+    <section class="card">
+      <div class="toolbar">
+        <h2>Students <span id="count"></span></h2>
+        <input id="search" type="search" placeholder="Search by name or roll no...">
+      </div>
+      <div class="table-wrap">
+        <table>
+          <thead><tr><th>Name</th><th>Roll No</th><th>Class</th><th>Marks</th><th>Contact</th><th>Actions</th></tr></thead>
+          <tbody id="tbody"></tbody>
+        </table>
+      </div>
+      <p id="empty" hidden>No students found.</p>
+    </section>
+  </main>
+  <script src="script.js"></script>
+</body>
+</html>
