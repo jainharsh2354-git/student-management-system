@@ -32,7 +32,7 @@ student-management-system/
 ## How to Run
 1. Clone the repository
    ```bash
-   git clone <your-repo-url>
+   git clone <git clone https://github.com/jainharsh2354-git/student-management-system.git>
    cd student-management-system
    ```
 2. (Optional) Create a virtual environment
@@ -65,4 +65,4 @@ Verified: add/update/delete, search by name & roll no, duplicate roll number (40
 updating/deleting non-existent student (404), searching a non-existent student (empty list).
 
 ## Author
-<Your Name>
+<HARSH JAIN>
