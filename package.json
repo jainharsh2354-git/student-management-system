@@ -1,0 +1,10 @@
+{
+  "name": "student-management-system",
+  "version": "1.0.0",
+  "description": "Student Management System - Flask + SQLite with HTML/CSS/JS frontend",
+  "scripts": {
+    "start": "python app.py",
+    "lint:js": "node --check static/script.js"
+  },
+  "license": "MIT"
+}
